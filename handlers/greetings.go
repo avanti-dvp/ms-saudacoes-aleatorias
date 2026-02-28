@@ -12,7 +12,6 @@ import (
 // CreateGreeting cadastra um novo cumprimento no banco de dados.
 func CreateGreeting(c *gin.Context) {
 	var input models.Greeting
-	var texto string
 
 	// Faz o bind do JSON recebido para a struct Greeting
 	if err := c.ShouldBindJSON(&input); err != nil {
